@@ -19,7 +19,7 @@ public class Zad3 {
 		System.out.println("Ime: " + name);
 		System.out.println("Familiq: " + surename);
 		System.out.println("Godini: " + age);
-		System.out.println("Pol" + sex);
+		System.out.println("Pol: " + sex);
 		System.out.println("EGN: " + egn);
 		System.out.println("telefon: " + gsm);
 		input.close();

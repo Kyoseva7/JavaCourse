@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		System.out.println("Vuvedete chislo: ");
+		int N = input.nextInt();
+		System.out.println("Vuvedete chislo: ");
+		int M = input.nextInt();
+		int res = 1;
+		for (int i = 0; i < M; i++) {
+			res = res * N;
+		}
+		System.out.println(res);
+		input.close();
+	}
+
+}

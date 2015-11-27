@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Zad5 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		System.out.println("Vuvedete 3 chisla: ");
+		int a = input.nextInt();
+		int b = input.nextInt();
+		int c = input.nextInt();
+		if (a + b < c) {
+			System.out.println(a + ", " + b + ", " + c + " mogat da sa strani na triugulnik");
+		} else if (a + c < b) { 
+			System.out.println(a + ", " + b + ", " + c + " mogat da sa strani na triugulnik");
+		} else if (b + c < a) {
+			System.out.println(a + ", " + b + ", " + c + " mogat da sa strani na triugulnik");
+		} else {
+			System.out.println(a + ", " + b + ", " + c + " ne mogat da sa strani na triugulnik");
+		}
+		input.close();
+	}
+
+}

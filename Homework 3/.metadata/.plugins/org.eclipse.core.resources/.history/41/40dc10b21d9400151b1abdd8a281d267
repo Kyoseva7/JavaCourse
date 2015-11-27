@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Zad8 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vuvedete a: ");
+		int a = input.nextInt();
+		System.out.println("Vuvedete b: ");
+		int b = input.nextInt();
+		System.out.println("Vuvedete c: ");
+		int c = input.nextInt();
+		System.out.println(a + "Math.pow(x) + " + b + "*x + " + c + "= 0");
+		double x1 = 0;
+		double x2 = 0;
+		double D = b * b - 4 * a * c;
+		if (D > 0) {
+			x1 = (-b + Math.sqrt(D))/2 * a;
+			x2 = (-b - Math.sqrt(D))/2 * a;
+			System.out.println("x1 = " + x1);
+			System.out.println("x2 = " + x2);
+		} else if (D < 0) {
+			System.out.println("uravnenieto nqma realni koreni");
+		} else {
+			x1 = x2 = (-b)/2 * a;
+			System.out.println("x1 = x2 = " + x1);
+		}
+		input.close();
+	}
+
+}
