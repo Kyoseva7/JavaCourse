@@ -180,6 +180,33 @@ public class Zad10 {
 			case 0:
 				System.out.println("zero");
 				break;
+			case 1:
+				edin = "one";
+				break;
+			case 2:
+				edin = "two";
+				break;
+			case 3:
+				edin = "three";
+				break;
+			case 4:
+				edin = "four";
+				break;
+			case 5:
+				edin = "five";
+				break;
+			case 6:
+				edin = "six";
+				break;
+			case 7:
+				edin = "seven";
+				break;
+			case 8:
+				edin = "eight";
+				break;
+			case 9:
+				edin = "nine";
+				break;
 			}
 		}
 		input.close();
