@@ -80,68 +80,67 @@ public class Zad10 {
 					deset = "nineteen";
 					break;
 				}
-				System.out.println(stot + " " + deset);
 			} else {
-				int des = ost / 10;
-				switch (des) {
-				case 2:
-					deset = "twenty";
-					break;
-				case 3:
-					deset = "thirty";
-					break;
-				case 4:
-					deset = "fourty";
-					break;
-				case 5:
-					deset = "fifty";
-					break;
-				case 6:
-					deset = "sixty";
-					break;
-				case 7:
-					deset = "seventy";
-					break;
-				case 8:
-					deset = "eighty";
-					break;
-				case 9:
-					deset = "ninety";
-					break;
-				}
-				int ed = ost % 10;
-				switch (ed) {
-				case 0:
-					break;
-				case 1:
-					edin = "one";
-					break;
-				case 2:
-					edin = "two";
-					break;
-				case 3:
-					edin = "three";
-					break;
-				case 4:
-					edin = "four";
-					break;
-				case 5:
-					edin = "five";
-					break;
-				case 6:
-					edin = "six";
-					break;
-				case 7:
-					edin = "seven";
-					break;
-				case 8:
-					edin = "eight";
-					break;
-				case 9:
-					edin = "nine";
-					break;
-				}
-				System.out.println(stot + " " + deset + " " + edin);
+			int des = ost / 10;
+			switch (des) {
+			case 2:
+				deset = "twenty";
+				break;
+			case 3:
+				deset = "thirty";
+				break;
+			case 4:
+				deset = "fourty";
+				break;
+			case 5:
+				deset = "fifty";
+				break;
+			case 6:
+				deset = "sixty";
+				break;
+			case 7:
+				deset = "seventy";
+				break;
+			case 8:
+				deset = "eighty";
+				break;
+			case 9:
+				deset = "ninety";
+				break;
+			}
+			int ed = ost % 10;
+			switch (ed) {
+			case 0:
+				break;
+			case 1:
+				edin = "one";
+				break;
+			case 2:
+				edin = "two";
+				break;
+			case 3:
+				edin = "three";
+				break;
+			case 4:
+				edin = "four";
+				break;
+			case 5:
+				edin = "five";
+				break;
+			case 6:
+				edin = "six";
+				break;
+			case 7:
+				edin = "seven";
+				break;
+			case 8:
+				edin = "eight";
+				break;
+			case 9:
+				edin = "nine";
+				break;
+			}
+			System.out.println(stot + " " + deset + " " + edin);
 			}
 		} else {
 			switch (num) {

@@ -80,7 +80,6 @@ public class Zad10 {
 					deset = "nineteen";
 					break;
 				}
-				System.out.println(stot + " " + deset);
 			} else {
 				int des = ost / 10;
 				switch (des) {
