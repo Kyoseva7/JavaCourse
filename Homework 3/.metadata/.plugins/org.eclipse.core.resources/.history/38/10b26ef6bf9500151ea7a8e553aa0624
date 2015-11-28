@@ -14,12 +14,12 @@ public class Zad3 {
 			} else {
 				System.out.println(c + " e nai-golqmoto chislo");
 			}
-		}
-		if (a < b) {
-			if (b < c) {
-				System.out.println(c + " e nai-golqmoto chislo");
-			} else {
-				System.out.println(b + " e nai-golqmoto chislo");
+			if (a < b) {
+				if (b < c) {
+					System.out.println(c + " e nai-golqmoto chislo");
+				} else {
+					System.out.println(b + " e nai-golqmoto chislo");
+				}
 			}
 		}
 		input.close();
