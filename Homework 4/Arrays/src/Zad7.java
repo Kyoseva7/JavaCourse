@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Zad7 {
+
+	public static void main(String[] args) {
+		int[] arr = new int[] {2, 5, 7, 8, 5, 4, 6, 3, 8, 4, 3, 3, 2, 5, 8, 6, 9, 1, 3, 2, 1};
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vuvedete cifra: ");
+		int a = input.nextInt();
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == a) {
+				System.out.println("arr[" + i + "] = " + a);
+				break;
+			}
+		}
+		input.close();
+	}
+
+}

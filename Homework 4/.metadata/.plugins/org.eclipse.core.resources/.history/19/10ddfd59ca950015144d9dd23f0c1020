@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Zad12 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		System.out.println("Vuvedete chislo: ");
+		int n = input.nextInt();
+		int st = 0;
+		int [][] matr = new int [n][n];
+		for (int i = 0; i < matr[0].length; i++) {
+			matr[0][i] = ++i;
+			st = matr[0][i];
+		}
+		for (int i = 0; i < matr[n-1].length; i++) {
+			matr[n-1][i] = ++st;
+		}
+		
+	}
+
+}

@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Zad12 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		System.out.println("Vuvedete chislo: ");
+		int n = input.nextInt();
+		int st = 1;
+		int [][] matr = new int [n][n];
+		for (int i = 0; i < matr.length; i++) {
+			for (int j = 0; j < matr[i].length; j++) {
+				matr[i][j] = st++;
+				for (int k = matr.length - 1; k >= 0; k--) {
+					matr[j][k] = st++;
+					for (int m = matr[k].length - 1; m >= 0; m--) {
+						matr[k][m] = st++;
+					}
+				}
+			}
+		}
+		for (int i = 0; i < matr.length; i++) {
+			for (int j = 0; j < matr[i].length; j++) {
+				System.out.print(matr[i][j] + " ");
+				for (int k = matr.length - 1; k >= 0; k--) {
+					System.out.println(matr[j][k] + " ");
+					for (int m = matr[k].length - 1; m >= 0; m--) {
+						System.out.print(matr[k][m] + " ");
+					}
+					System.out.println();
+				}
+			}
+		}
+		input.close();
+	}
+
+}

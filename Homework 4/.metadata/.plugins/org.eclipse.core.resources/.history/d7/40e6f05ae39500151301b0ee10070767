@@ -1,0 +1,16 @@
+
+public class Zad8 {
+
+	public static void main(String[] args) {
+		int[] arr = new int[] {1, 5, 7, 8, 7, 5, 1};
+		for (int i = 0; i < arr.length / 2 + 1; i++) {
+			if (arr[i] == arr[arr.length - 1 - i]) {
+				continue;
+			} else {
+				System.out.println("Masivut e nesimetrichen");
+			}
+			System.out.println("Masivut e simetrichen");
+		}
+	}
+
+}

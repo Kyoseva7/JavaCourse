@@ -1,0 +1,16 @@
+
+public class Zad9 {
+
+	public static void main(String[] args) {
+		int[] arr = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9};
+		int[] arr2 = new int[arr.length];
+		for (int i = arr.length; i >= 0; i--) {
+			for (int j = 0; j < arr.length; j++) {
+				arr2[j] = arr[i];
+				System.out.print(arr[j]);
+			}
+			System.out.println();
+		}
+	}
+
+}

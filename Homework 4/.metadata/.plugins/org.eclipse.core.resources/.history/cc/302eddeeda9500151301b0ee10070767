@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Zad2 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vuvedete chislo: ");
+		int n = input.nextInt();
+		int[] fibo = new int[n];
+		fibo[0] = 0;
+		fibo[1] = 1;
+		System.out.println(fibo[0] + " " + fibo[1] + " ");
+		for (int i = 2; i <= n; i++) {
+			fibo[i] = fibo[i - 1] + fibo[i - 2];
+			System.out.print(fibo[i] + " ");
+		}
+		input.close();
+	}
+
+}
