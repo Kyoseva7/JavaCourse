@@ -25,6 +25,7 @@ public class Zad8 {
 				arr[i] = arr[n - 1];
 				arr[n - 1] = tmp;
 				System.out.println(arr);
+				perm(n);
 			}
 		}
 	}

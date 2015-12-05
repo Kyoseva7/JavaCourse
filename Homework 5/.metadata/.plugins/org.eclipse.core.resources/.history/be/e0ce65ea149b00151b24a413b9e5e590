@@ -22,8 +22,8 @@ public class Zad8 {
 				System.out.println(arr);
 				perm(n-1);
 				arr[i] = tmp;
-				arr[i] = arr[n - 1];
-				arr[n - 1] = tmp;
+				arr[i] = arr[n - 2];
+				arr[n - 2] = tmp;
 				System.out.println(arr);
 			}
 		}
