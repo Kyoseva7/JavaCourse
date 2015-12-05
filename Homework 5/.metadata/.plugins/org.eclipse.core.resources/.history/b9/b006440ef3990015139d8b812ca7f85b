@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vuvedete chislo: ");
+		int n = input.nextInt();
+			sumNum(n);
+			input.close();
+	}
+	public static void sumNum(int a) {
+		int sum = 0;
+		if(a > 10 || a < 30000) {
+			sumNum(a);
+			for (int i = 1; i < a; i++) {
+				sum = sum + i;
+			}
+			System.out.println(sum);
+		} else {
+			return;
+		}
+	}
+}

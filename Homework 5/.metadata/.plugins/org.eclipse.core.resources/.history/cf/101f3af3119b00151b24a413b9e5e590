@@ -1,0 +1,35 @@
+
+public class Zad8 {
+
+	public static void main(String[] args) {
+		int n = 3;
+		int[] arr = new int[n];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = i + 1;
+			System.out.print(arr[i] + " ");
+		}
+//		perm(n);
+	}
+//	public static void perm(int a) {
+//		int[] arr = new int[a];
+//		for (int i = 0; i < arr.length; i++) {
+//			arr[i] = ++i;
+//			System.out.println(arr[i] + " ");
+//		}
+//		if (a == 1) {
+//			System.out.println(a);
+//		} else {
+//			for (int i = 0; i < a; i++) {
+//				int tmp = 0;
+//				arr[i] = tmp;
+//				arr[i] = arr[a - 1];
+//				arr[a - 1] = tmp;
+//				perm(a - 2);
+//				arr[i] = tmp;
+//				arr[i] = arr[a - 1];
+//				arr[a - 1] = tmp;
+//			}
+//		}
+//		System.out.println(arr[a]);
+//	}
+}

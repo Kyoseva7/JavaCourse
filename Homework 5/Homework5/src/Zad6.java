@@ -1,0 +1,15 @@
+
+public class Zad6 {
+
+	public static void main(String[] args) {
+		char[] word = new char[] {'b', 'a', 'n', 'a', 'n'};
+		System.out.println(word);
+		reverseWord(word);
+	}
+	
+	public static void reverseWord(char[] abc) {
+		for (int i = abc.length -1; i >= 0; i--) {
+			System.out.print(abc[i]);
+		}
+	}
+}

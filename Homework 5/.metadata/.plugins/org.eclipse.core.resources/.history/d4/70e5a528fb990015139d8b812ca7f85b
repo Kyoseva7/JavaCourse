@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vuvedete chislo: ");
+		int n = input.nextInt();
+		if(n < 10 || n > 30000) {
+			System.out.println("Opitai pak!");
+		} else {
+			int sum = sumNum(n);
+			System.out.println(sum);
+		}
+			input.close();
+	}
+	public static int sumNum(int a) {
+		int sum = 0;
+		if (a != 1) {
+			sumNum(a);
+			sum = sum * a * (a - 1) + a;
+			return(sum);
+		} else {
+			return 0;
+		}
+	}
+}
