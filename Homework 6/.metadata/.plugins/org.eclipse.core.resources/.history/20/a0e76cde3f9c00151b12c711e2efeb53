@@ -1,0 +1,10 @@
+
+public class Anton {
+
+	public static void main(String[] args) {
+		Person anton = new Person();
+		set.name = "Anton";
+		
+	}
+
+}

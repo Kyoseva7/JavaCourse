@@ -1,0 +1,21 @@
+
+public class Policeman extends Employee {
+	
+	private String rank;
+	
+	public Policeman(int workHours, double salary, String rank){
+		super(workHours, salary);
+		setRank(rank);
+	}
+	
+	public void setRank(String rank) {
+		if(rank != "" && rank != null) {
+			this.rank = rank;
+		}
+	}
+	
+	public String getRank(String rank) {
+		return rank;
+	}
+
+}

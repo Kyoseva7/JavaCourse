@@ -1,0 +1,6 @@
+
+public class Fruits extends Stock {
+	
+	String taste;
+	String season;
+}

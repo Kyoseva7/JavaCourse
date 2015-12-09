@@ -1,0 +1,9 @@
+
+public class Automobile extends Car {
+	
+	double fuelCons;
+	
+	public void setFuelCons(double fuel) {
+		System.out.println(fuel); 
+	}
+}

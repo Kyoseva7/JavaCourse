@@ -1,0 +1,6 @@
+
+public class Drinks extends Stock {
+
+	boolean alchohol;
+	String drinkFrom;
+}

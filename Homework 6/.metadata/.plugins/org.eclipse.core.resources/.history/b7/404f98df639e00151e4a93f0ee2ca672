@@ -1,0 +1,20 @@
+
+public class Automobile extends Car {
+	
+	double fuelCons;
+	
+	public Automobile() {
+		super();
+		fuelCons = 0;
+	}
+	
+	public void setFuelCons(double fuel) {
+		if(fuel > 0) {
+			this.fuelCons = fuel;
+		}
+	}
+	
+	public double getFuelCons() {
+		return fuelCons;
+	}
+}

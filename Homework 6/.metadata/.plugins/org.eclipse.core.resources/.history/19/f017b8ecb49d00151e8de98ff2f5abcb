@@ -1,0 +1,11 @@
+
+public class Store {
+	
+	String name;
+	String address;
+	
+	public static void main(String[] args) {
+		Store[] Stock = new Store[5];
+		Stock[1].name = "Meat";
+	}
+}

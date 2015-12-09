@@ -1,0 +1,6 @@
+
+public class Meat extends Stock {
+	
+	boolean redMeat;
+	boolean whiteMeat;
+}

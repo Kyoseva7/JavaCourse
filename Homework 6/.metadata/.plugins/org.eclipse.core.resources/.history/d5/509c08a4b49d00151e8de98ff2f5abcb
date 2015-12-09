@@ -1,0 +1,11 @@
+
+public class SUV extends Car {
+	
+	boolean highGo;
+	
+	public void highGo(String high) {
+		if(high == "yes") {
+			System.out.println("HighGo");
+		}
+	}
+}

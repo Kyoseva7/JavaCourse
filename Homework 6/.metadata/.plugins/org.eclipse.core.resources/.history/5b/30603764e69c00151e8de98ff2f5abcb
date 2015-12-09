@@ -1,0 +1,7 @@
+
+public class Automobile extends Car {
+	
+	double fuelCons;
+	
+
+}

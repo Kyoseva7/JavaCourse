@@ -1,0 +1,9 @@
+
+public class Anton {
+
+	public static void main(String[] args) {
+		Person anton = new Person(anton, 23, 9904343333);
+
+	}
+
+}

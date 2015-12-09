@@ -1,0 +1,12 @@
+
+public class Employee {
+	
+	protected int workHours;
+	protected double salary;
+	
+	public Employee(int workHours, double salary) {
+		super();
+		this.workHours = 0;
+		this.salary = 0.0;
+	}
+}

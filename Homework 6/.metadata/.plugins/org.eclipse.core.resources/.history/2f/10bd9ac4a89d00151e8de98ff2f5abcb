@@ -1,0 +1,11 @@
+
+public class Stock {
+	
+	double price;
+	boolean available;
+	
+	public void setPrice(double price) {
+		System.out.println(price);
+	}
+}
+

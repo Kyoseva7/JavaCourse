@@ -1,0 +1,25 @@
+
+public class SUV extends Car {
+	
+	boolean highGo;
+	
+	public SUV() {
+		super();
+		this.highGo = false;
+	}
+	
+	public SUV(double price, boolean highGo) {
+		super();
+		setHighGo(highGo);
+	}
+	
+	public void setHighGo(boolean highGo) {
+		if(highGo = true) {
+			this.highGo = true;
+		}
+	}
+	
+	public boolean getHighGo() {
+		return highGo;
+	}
+}

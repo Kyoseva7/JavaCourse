@@ -1,0 +1,6 @@
+
+public class Desserts extends Stock {
+	
+	boolean salty;
+	boolean cake;
+}
