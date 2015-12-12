@@ -1,0 +1,38 @@
+
+public abstract class Person {
+	
+	public Person(String name, String familyName, int workAge) {
+		super();
+	}
+	
+	public static int personCount = 0;
+	protected String name;
+	protected String familyName;
+	protected int workAge;
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public String getFamilyName() {
+		return familyName;
+	}
+
+	public void setFamilyName(String familyName) {
+		this.familyName = familyName;
+	}
+	
+	public int getWorkAge() {
+		return workAge;
+	}
+
+	public void setWorkAge(int workAge) {
+		if(workAge > 0)
+		this.workAge = workAge;
+	}
+
+}

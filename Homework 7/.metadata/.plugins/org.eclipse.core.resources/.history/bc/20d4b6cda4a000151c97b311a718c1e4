@@ -1,0 +1,13 @@
+
+public abstract class Person {
+	public static int personCount = 0;
+	protected name;
+	protected familyName;
+	protected workAge;
+	
+	public static void setName(String name) {
+		if(name != null && name != "") {
+			this.name = name;
+		}
+	}
+}

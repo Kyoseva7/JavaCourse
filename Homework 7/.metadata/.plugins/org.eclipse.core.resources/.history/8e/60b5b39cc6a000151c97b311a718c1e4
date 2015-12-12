@@ -1,0 +1,25 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		Teacher teacher1 = new Teacher("Ana", "Hana", 7, "literature");
+		teacher1.goodDay();
+		teacher1.goodBye();
+		
+		SchoolTeacher schoolTeacher1 = new SchoolTeacher("Ben", "Haris", 9, "math", new String[]{3a, 1b, 4a, 4b,1c});
+		schoolTeacher1.sayClasses(String[] classes);
+		schoolTeacher1.enjoyKids();
+		schoolTeacher1.homework(5);
+		
+		CollegeTeacher collTeach = new CollegeTeacher("Mia", "Vain", 1, "science", "SU");
+		collTeach.homework(6);
+		
+		Lecturer lecturer1 = new Lecturer("Tom", "Lane", 8, "math", "Su", 4);
+		lecturer1.exercise1();
+		lecturer1.exercise2(3);
+		lecturer1.exercise3(1, 3);
+		
+		
+	}
+
+}

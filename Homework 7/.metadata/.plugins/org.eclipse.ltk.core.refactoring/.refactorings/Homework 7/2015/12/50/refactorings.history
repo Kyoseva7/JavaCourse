@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Assistnt.java&apos; to &apos;Assistant.java&apos;&#x0D;&#x0A;- Original project: &apos;Homework 7&apos;&#x0D;&#x0A;- Original element: &apos;Assistnt.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Assistant.java&apos;" description="Rename compilation unit &apos;Assistnt.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{Assistnt.java" name="Assistant.java" references="false" stamp="1449918099716" version="1.0"/>
+</session>

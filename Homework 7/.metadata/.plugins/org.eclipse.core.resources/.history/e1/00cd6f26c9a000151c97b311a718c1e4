@@ -1,0 +1,33 @@
+
+public class SchoolTeacher extends Teacher {
+	
+	public SchoolTeacher() {
+		super();
+	}
+	
+	public SchoolTeacher(String name, String familyName, int workAge, String subject, String[] classes) {
+		super(name, familyName, workAge, subject);
+		setClasses();
+	}
+	
+	String[] classes = new String[5];
+	
+	public void setClasses() {
+		this.classes[1] = "5a";
+		this.classes[2] = "4a";
+		this.classes[3] = "3b";
+		this.classes[4] = "5v";
+		this.classes[0] = "6a";
+	}
+	
+	public void sayClasses() {
+		for (int i = 0; i < classes.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+	
+	public void enjoyKids() {
+		System.out.println("enjoy classes");
+	}
+	
+}
