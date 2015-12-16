@@ -34,9 +34,7 @@ public class Test {
 		assist1.makeSciencePubl("chemic");
 		assist1.homework(6);
 		assist1.checkExams("chemic");
-		System.out.println();
 		
-		System.out.println("Objects: " + Person.personCount);
 		
 	}
 

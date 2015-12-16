@@ -7,7 +7,6 @@ public abstract class Person {
 	
 	public Person(String name, String familyName, int workAge) {
 		super();
-		personCount++;
 	}
 	
 	public static int personCount = 0;
