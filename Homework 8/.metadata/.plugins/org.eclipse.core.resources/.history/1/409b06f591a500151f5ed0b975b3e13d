@@ -1,0 +1,6 @@
+package Zadacha;
+
+public class Account {
+	
+	private double sum;
+}

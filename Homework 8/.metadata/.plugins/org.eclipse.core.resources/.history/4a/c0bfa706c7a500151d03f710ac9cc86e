@@ -1,0 +1,15 @@
+package Zadacha;
+
+public class Test {
+
+	public void checkIfAccount(object) {
+		if(PersonalAccount.isinstanceof(object)) {
+			System.out.println(object.egn);
+		} else if(CorporativeAccount.isinstanceof(object)) {
+				System.out.println(object.eik);
+		} else {
+			throw new InvalidAccountException("Invalid account");
+		}
+	}
+}
+}

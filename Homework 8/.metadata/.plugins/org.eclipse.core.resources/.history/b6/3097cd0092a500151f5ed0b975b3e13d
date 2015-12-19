@@ -1,0 +1,15 @@
+package Zadacha;
+
+public class Account {
+	
+	public Account() {
+		super();
+	}
+
+	public Account(double sum) {
+		super();
+		this.sum = sum;
+	}
+
+	private double sum;
+}

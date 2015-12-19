@@ -1,0 +1,10 @@
+package Zadacha;
+
+public class Test {
+
+	public static void main(String[] args) {
+		PersonalAccount account1 = new PersonalAccount(5050, "Bob", 4758475983475);
+		
+		
+	}
+}

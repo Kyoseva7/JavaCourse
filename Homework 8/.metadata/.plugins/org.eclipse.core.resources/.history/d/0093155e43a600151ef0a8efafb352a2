@@ -1,0 +1,22 @@
+package Zadacha;
+
+public class Test {
+
+	public static void main(String[] args) {
+		PersonalAccount account1 = new PersonalAccount(5050, "Bob", 157);
+		
+		try {
+			account1.setSum(-5);
+			
+			System.out.println("Sum: " + account1.getSum());
+		} catch (NegativeMoneyException Exception) {
+			System.out.println("Error: " + Exception.getMessage());
+		}
+		
+		try {
+			Account.checkIfAccount(account1);
+		} catch (InvalidAccountException e) {
+			
+		}
+	}
+}
