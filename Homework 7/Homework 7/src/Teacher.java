@@ -20,14 +20,6 @@ public class Teacher extends Person {
 		setSubject(subject);
 	}
 	
-	public void homework(int hw) {
-		System.out.println(hw);
-	}
-	
-	public void goodDay() {
-		System.out.println("Good Day!");
-	}
-	
 	public void goodBye() {
 		System.out.println("Good Bye!");
 	}

@@ -39,5 +39,13 @@ public abstract class Person {
 		if(workAge > 0)
 		this.workAge = workAge;
 	}
+	
+	public void homework(int hw) {
+		System.out.println(hw);
+	}
+	
+	public void goodDay() {
+		System.out.println("Good Day!");
+	}
 
 }
