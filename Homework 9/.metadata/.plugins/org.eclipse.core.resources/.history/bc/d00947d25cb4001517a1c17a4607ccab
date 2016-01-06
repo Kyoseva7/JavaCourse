@@ -1,0 +1,17 @@
+package Zad96;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Test {
+
+	public static void main(String[] args) {
+		HashMap<String, ArrayList<Integer>> notebook1 = new HashMap<String, ArrayList<Integer>>();
+		Student Ivo = new Student ("Ivo", "Ivanov", 5, notebook1);
+		notebook1. put("Math", null);
+		addSubjectMark("Math", 4);
+		
+		
+	}
+
+}
