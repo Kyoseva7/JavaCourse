@@ -1,0 +1,58 @@
+
+public class Student {
+
+	private String name;
+	private String familyName;
+	private int facNum;
+	private int group;
+
+	public Student(String name, String familyName, int facNum, int i) {
+		super();
+		this.name = name;
+		this.familyName = familyName;
+		this.facNum = facNum;
+		this.group = i;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getFamilyName() {
+		return familyName;
+	}
+
+	public void setFamilyName(String familyName) {
+		this.familyName = familyName;
+	}
+
+	public int getFacNum() {
+		return facNum;
+	}
+
+	public void setFacNum(int facNum) {
+		if (facNum > 0) {
+			this.facNum = facNum;
+		}
+	}
+
+	public byte getGroup() {
+		return group;
+	}
+
+	public void setGroup(byte group) {
+		if (group > 0) {
+			this.group = group;
+		}
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("%s %s %d %d", this.name, this.familyName, this.facNum, this.group);
+	}
+
+}

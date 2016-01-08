@@ -1,0 +1,18 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		Student[] students = new Student[5];
+		students[0] = new Student("Ivan", "Manev", 232332, 12);
+		students[1] = new Student("Bobi", "Peev", 44333, 23);
+		students[2] = new Student("Eva", "Dareva", 324543, 2);
+		students[3] = new Student("Nia", "Kirova", 234422, 45);
+		students[4] = new Student("Koko", "Nonev", 232334, 3);
+	
+		
+		for (int i = 0; i < students.length; i++) {
+			System.out.println(students[i].toString());
+		}
+	}
+
+}

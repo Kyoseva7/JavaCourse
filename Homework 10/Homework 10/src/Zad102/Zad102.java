@@ -1,0 +1,19 @@
+package Zad102;
+
+import java.util.Scanner;
+
+public class Zad102 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vuvedete duma: ");
+		String word = input.nextLine();
+		System.out.println("Vuvedete izrechenie: ");
+		String sentence = input.nextLine();
+		
+		String edited = sentence.replace(word, word.toUpperCase());
+		System.out.println(edited);
+		input.close();
+	}
+
+}
