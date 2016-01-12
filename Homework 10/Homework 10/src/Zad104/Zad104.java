@@ -3,7 +3,15 @@ package Zad104;
 public class Zad104 {
 
 	public static void main(String[] args) {
+		String sentence = "Children can be boys or girls. Tom is a boy. Emma is a girl. Are you a girl? Are you a boy?";
+		String search = "boy";
+		String[] parts = sentence.split(". |? |!");
 		
+		for(String part : parts) {
+			if (part.contains(search)) {
+				System.out.println(part);
+			}
+		}
 
 	}
 

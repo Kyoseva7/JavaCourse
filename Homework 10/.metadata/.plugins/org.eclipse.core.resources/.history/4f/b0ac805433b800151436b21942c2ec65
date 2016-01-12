@@ -1,0 +1,58 @@
+package Ex3;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class Ex3 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Vuvedete stolicata na vsqka ot durjavite: ");
+		readFile("E:/JavaCourse/JavaCourse/JavaCourse/Homework 10/Homework 10/src/Countries.txt");
+		
+		String fileWrite = "E:/JavaCourse/JavaCourse/JavaCourse/Homework 10/Homework 10/src/Cities.txt";
+		
+		try {
+			
+			FileWriter fileWriter = new FileWriter(fileWrite, true);
+			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+			
+			for (int i = 0; i < 5; i++) {
+				String city = input.nextLine();
+				bufferedWriter.write(city);
+				bufferedWriter.newLine();
+				
+				bufferedWriter.close();
+			}
+		} catch (Exception e) {
+			System.out.println("Error while writing a file.");
+			System.out.println(e.getMessage());
+			System.exit(0);
+		}
+		System.out.println("The file is ready.");
+	}
+
+	public static void readFile(String path) {
+
+		try {
+
+			FileReader fileReader = new FileReader(path);
+			BufferedReader bufferedReader = new BufferedReader(fileReader);
+			while (bufferedReader.ready()) {
+				String line = bufferedReader.readLine();
+				System.out.println(line);
+			}
+			bufferedReader.close();
+		} catch (Exception e) {
+			System.out.println("Error while reading a file.");
+			System.out.println(e.getMessage());
+			System.exit(0);
+		}
+	}
+	
+}
