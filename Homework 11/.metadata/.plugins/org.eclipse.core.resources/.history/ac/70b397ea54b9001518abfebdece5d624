@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Zad1 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		System.out.println("Vuvedete izrechenie: ");
+		
+		Stack<String> words = new Stack<String>();
+		for (int i = 0; i < 9; i++) {
+			words.push(input.nextLine());
+		}
+		
+		while(!words.isEmpty()) {
+			String current = words.pop();
+			System.out.println(current);
+		}
+		input.close();
+	}
+
+}

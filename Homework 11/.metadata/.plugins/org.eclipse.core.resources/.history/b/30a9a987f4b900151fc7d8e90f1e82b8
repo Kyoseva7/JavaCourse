@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Zad3 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		String zad = input.nextLine();
+		if (zad.startsWith()) {
+			for (int i = 1; i < zad.length(); i++) {
+				if(zad.charAt(i) % 2 == 0) {
+					zad.charAt(i)..
+				} else {
+					
+				} 
+			}
+		} else {
+			System.out.println("nekorektno!");
+		}
+	}
+
+}
