@@ -22,7 +22,7 @@ public class Zad107 {
 				if (count % 2 == 0) {
 					try {
 
-						FileWriter fileStream = new FileWriter(path2);
+						FileWriter fileStream = new FileWriter(path2, true);
 
 						BufferedWriter writer = new BufferedWriter(fileStream);
 
