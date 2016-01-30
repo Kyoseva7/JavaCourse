@@ -1,0 +1,30 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class Player {
+
+	long egn;
+
+	ArrayList<Integer> numbers = new ArrayList<Integer>();
+
+	public Player(int egn, ArrayList<Integer> numbers) {
+		
+	}
+
+	public long getEgn() {
+		return egn;
+	}
+
+	public void setEgn(long egn) {
+		this.egn = egn;
+	}
+
+	public ArrayList<Integer> getNumbers() {
+		return numbers;
+	}
+
+	public void setNumbers(ArrayList<Integer> numbers) {
+		this.numbers = numbers;
+	}
+
+}

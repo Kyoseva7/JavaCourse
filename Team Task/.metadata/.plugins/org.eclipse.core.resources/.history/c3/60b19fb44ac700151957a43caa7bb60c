@@ -1,0 +1,43 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class Player {
+
+	long egn;
+
+	ArrayList<Integer> numbers = new ArrayList<Integer>();
+
+	public Player(Scanner input) {
+		System.out.println("Please enter EGN");
+
+		this.egn = input.nextInt();
+		
+		for (; numbers.size() < 5; ) {
+
+			int number = input.nextInt();
+			if(number > 30 || number < 1) {
+				System.out.println("Wrong number!");
+				continue;
+			}
+			numbers.add(number);
+
+		}
+	}
+
+	public long getEgn() {
+		return egn;
+	}
+
+	public void setEgn(long egn) {
+		this.egn = egn;
+	}
+
+	public ArrayList<Integer> getNumbers() {
+		return numbers;
+	}
+
+	public void setNumbers(ArrayList<Integer> numbers) {
+		this.numbers = numbers;
+	}
+
+}
