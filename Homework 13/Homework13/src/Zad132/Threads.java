@@ -1,0 +1,27 @@
+package Zad132;
+
+import java.util.Random;
+
+public class Threads extends Thread {
+	
+		public Threads(String name) {
+		super();
+		setName(name);
+	}
+
+
+
+	public void run() {
+		try {
+			System.out.println("The thread is started!");
+			Random rand = new Random();
+			int randomInt = rand.nextInt(10000);
+			Threads.sleep(randomInt);
+		} catch (InterruptedException e) {
+			System.out.println(e);
+			e.printStackTrace();
+		}
+		System.out.println("The thread1 is complete!");
+	}
+
+}

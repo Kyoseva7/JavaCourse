@@ -1,0 +1,20 @@
+package zad5;
+
+public class Laptop extends Device{
+	
+	private int ram;
+
+	public Laptop(String model, String brand, int ram) {
+		super(model, brand);
+		setRam(ram);
+	}
+
+	public int getRam() {
+		return ram;
+	}
+
+	public void setRam(int ram) {
+		this.ram = ram;
+	}
+		 
+}

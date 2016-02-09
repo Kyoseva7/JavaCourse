@@ -1,0 +1,25 @@
+package Zad133;
+
+import java.util.Random;
+
+public class Thread1 extends Thread {
+	
+	public void run() {
+
+		for (int i = 0; i < 50000; i++) {
+
+			try {
+				System.out.println("i");
+			
+				if(i == 25000) {
+					Thread2.join();
+				}
+			} catch (InterruptedException e) {
+				System.out.println(e);
+				e.printStackTrace();
+			}
+			System.out.println("The thread2 is complete!");
+		}
+	}
+
+}

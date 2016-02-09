@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		int[][] arr = new int[10][10];
+		int count = 1;
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				arr[i][j] = count;
+				count++;
+			}
+		}
+		
+		int min = arr[0][0];
+		int max = arr[0][0];
+		int index1 = 0;
+		int index2 = 0;
+		int index3 = 0;
+		int index4 = 0;
+		
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				if(arr[i][j] < min) {
+					min = arr[i][j];
+					index1 = i;
+					index2 = j;
+					
+				} else if (arr[i][j] > max) {
+					max = arr[i][j];
+					index3 = i;
+					index4 = j;
+				}
+			}
+		}
+		
+		System.out.println("min = " + min + " arr{" + index1 + "][" + index2 +"]" );
+		System.out.println("max = " + max + " arr{" + index3 + "][" + index4 +"]" );
+		input.close();
+	}
+
+}

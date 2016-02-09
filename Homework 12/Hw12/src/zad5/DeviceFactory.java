@@ -1,0 +1,16 @@
+package zad5;
+
+public class DeviceFactory {
+
+	public static Device makeDevice(String model, String brand, String charac) {
+		if(charac.equals("Phone")) {			
+			return new Phone(model, brand);
+		} else if(charac.equals("Tablet")) {
+			return new Tablet(model, brand);
+		} else if(charac.equals("Laptop")) {
+			return new Laptop(model, brand);
+		} else {
+		return null;
+		}
+	}
+}
