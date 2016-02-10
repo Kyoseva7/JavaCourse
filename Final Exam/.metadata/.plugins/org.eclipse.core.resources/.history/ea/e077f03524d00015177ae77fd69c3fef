@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class start {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vuvedete chislo ot 2 do 9 : ");
+		int num = input.nextInt();
+		if(num > 1 && num < 10) {
+			Matrix matrix = new Matrix(num);
+		}
+	}
+
+}

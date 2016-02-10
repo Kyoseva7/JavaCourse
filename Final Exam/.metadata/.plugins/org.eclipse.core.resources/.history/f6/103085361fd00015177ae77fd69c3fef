@@ -1,0 +1,32 @@
+
+public class matrix {
+	
+	private int side;
+	private int[][] array;
+	
+	public matrix(int side) {
+		super();
+		this.side = side;
+		this.array = new int[side][side];
+	}
+	
+	public int getSide() {
+		return side;
+	}
+
+	public void setSide(int side) {
+		if(side > 1 && side < 10) {
+			this.side = side;
+		}
+	}
+
+	public int[][] getArray() {
+		return array;
+	}
+
+	public void setArray(int[][] array) {
+		this.array = array;
+	}
+	
+	
+}

@@ -1,0 +1,112 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class Matrix {
+
+	private int side;
+	private int[][] array;
+
+	public Matrix(int side) {
+		super();
+		this.side = side;
+		this.array = new int[side][side];
+	}
+
+	public int getSide() {
+		return side;
+	}
+
+	public void setSide(int side) {
+		if (side > 1 && side < 10) {
+			this.side = side;
+		}
+	}
+
+	public int[][] getArray() {
+		return array;
+	}
+
+	public void setArray(int[][] array) {
+		this.array = array;
+	}
+
+	public void fillArray(int[][] a) {
+		for (int i = 0; i < array.length; i++) {
+			for (int j = 0; j < array[i].length; j++) {
+				array[i][j] = a[i][j];
+			}
+		}
+	}
+
+	public void writeArray() {
+		String filePath = "E:/JavaCourse/JavaCourse/JavaCourse/Final Exam/matrix.txt";
+
+		try {
+
+			FileWriter fileStream = new FileWriter(filePath);
+
+			BufferedWriter writer = new BufferedWriter(fileStream);
+
+			for (int i = 0; i < array.length; i++) {
+				for (int j = 0; j < array[i].length; j++) {
+					writer.write(String.format("%d ", array[i][j]));
+				}
+				writer.newLine();
+			}
+			writer.close();
+
+		} catch (Exception e) {
+			System.out.println("Error while writing a file.");
+			System.out.println(e.getMessage());
+			System.exit(0);
+		}
+
+		System.out.println("The file is success.");
+	}
+
+	public int sumOfMax() {
+		int sum = 0;
+		for (int i = 0; i < array.length; i++) {
+			int max = array[i][0];
+			for (int j = 0; j < array[i].length; j++) {
+				if (array[i][j] > max) {
+					max = array[i][j];
+				}
+			}
+			System.out.println("Max of line " + i + " is " + max);
+			sum += max;
+		}
+
+		for (int i = 0; i < array.length; i++) {
+			int max = array[0][i];
+			for (int j = 0; j < array.length; j++) {
+				if (array[j][i] > max) {
+					max = array[j][i];
+				}
+			}
+			System.out.println("Max of column " + i + " is " + max);
+			sum += max;
+		}
+
+		int max = array[0][0];
+		for (int i = 0; i < array.length; i++) {
+			if (array[i][i] > max) {
+				max = array[i][i];
+			}
+		}
+		System.out.println("Max of diagonal 1 is " + max);
+		sum += max;
+
+		max = array[side - 1][0];
+		for (int i = array.length - 1, j = 0; i >= 0; i--, j++) {
+			if (array[i][j] > max) {
+				max = array[i][j];
+			}
+		}
+		System.out.println("Max of diagonal 2 is " + max);
+		sum += max;
+
+		return sum;
+	}
+
+}
